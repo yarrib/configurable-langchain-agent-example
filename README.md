@@ -5,12 +5,7 @@ This is a small repo that lets you see how to configure llm internals at runtime
 Agent Features:
     - one tool in the demo, DuckDuckGo search
     - chat history *and* entity memory
-    - llm is configurable at runtime, see main.py/run_agent ~ln 29:
-    
-        ```{python}
-        agent.agent.runnable.steps[2].bound = agent.agent.runnable.steps[2].bound.with_config(configurable={"llm": llm_choice})
-        ```
-
+    - llm is configurable at runtime, see main.py/run_agent ~ln 29 and how run_agent takes "llm_choice" as an argument
 
 # Setup
 1. Create a virtual environment, assumes you have python 3.10 or later
